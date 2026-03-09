@@ -45,7 +45,7 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hi I'm Karen`}<span className="wrap">{text}</span></h1>
+                        <h1>{`Hi I'm Karen `}<span className="wrap">{text}</span></h1>
                         <p>Creative and detail-oriented Full-Stack Web Developer with a background in Graphic and
 Motion Design. Practical experience in building responsive applications using TypeScript,
 React, Node.js, Express, and cloud deployment. Strong focus on clean code, user
