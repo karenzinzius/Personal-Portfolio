@@ -35,7 +35,7 @@ return (
                         <h2>
                             Skills
                         </h2>
-                        <p>Strong skills in frontend development using React, JavaScript (ES6+), Typescript HTML5, CSS3, Bootstrap, and responsive design to build modern, user-friendly interfaces. Experienced in backend development with Node.js, Express.js, .NET, and ASP.NET for creating scalable server-side applications and RESTful APIs. Proficient in working with databases including PostgreSQL, MongoDB, and SQL, as well as integrating external services such as OpenAI API and Gemini API. Familiar with version control and DevOps practices using Git, GitHub, and CI/CD workflows for efficient development and deployment. Solid foundation in data structures, algorithms, and object-oriented programming, combined with strong problem-solving, analytical thinking, collaboration, and continuous learning skills.</p>
+                        <p>My strong skills in frontend development using responsive design to build modern, user-friendly interfaces. Experienced in backend development with Express.js, .NET, and ASP.NET for creating scalable server-side applications, Proficient in working with databases including MongoDB integrating external services such as OpenAI API and Gemini API. Familiar with version control and DevOps practices using Git, GitHub, and CI/CD workflows for efficient development and deployment. Solid foundation in data structures, algorithms, and object-oriented programming, combined with strong problem-solving, analytical thinking, collaboration, and continuous learning skills.</p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
@@ -47,19 +47,19 @@ return (
                             </div>
                                <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>React/Vite</h5>
+                                <h5>React|Vite</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Non SQL & (My/Postre)SQl</h5>
+                                <h5>Non SQL|(My/Postre)SQl</h5>
                             </div>
                              <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>HTML, CSS, Tailwind CSS</h5>
+                                <h5>HTML|CSS|Tailwind CSS</h5>
                             </div>
                              <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Node.js, Express, Rest APIs</h5>
+                                <h5>Express|Rest APIs</h5>
                             </div>
                         </Carousel>
                     </div>
