@@ -46,7 +46,7 @@ export const Projects = () => {
 ];
 
 return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
         <Container>
             <Row>
                 <Col>
@@ -62,9 +62,6 @@ return (
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="fourth">Tab 4</Nav.Link>
                     </Nav.Item>
                   </Nav>
                 <Tab.Content>
@@ -84,7 +81,6 @@ return (
                     </Tab.Pane>
                     <TabPane eventKey="second">here comes</TabPane>
                     <TabPane eventKey="third">here comes</TabPane>
-                    <TabPane eventKey="fourth">here comes</TabPane>
                 </Tab.Content>
                 </TabContainer>
                 </Col>
