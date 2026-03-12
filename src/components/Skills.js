@@ -36,7 +36,7 @@ return (
                             Skills
                         </h2>
                         <p>My strong skills in frontend development using responsive design to build modern, user-friendly interfaces. Experienced in backend development with Express.js, .NET, and ASP.NET for creating scalable server-side applications, Proficient in working with databases including MongoDB integrating external services such as OpenAI API and Gemini API. Familiar with version control and DevOps practices using Git, GitHub, and CI/CD workflows for efficient development and deployment. Solid foundation in data structures, algorithms, and object-oriented programming, combined with strong problem-solving, analytical thinking, collaboration, and continuous learning skills.</p>
-                        <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} showDots={true} className="skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
                                 <h5>JavaScript</h5>
