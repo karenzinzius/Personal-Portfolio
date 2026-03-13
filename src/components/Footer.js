@@ -10,16 +10,19 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <Col size={12} sm={6}>
-            <img src={logo} alt="Logo" />
-          </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
+           <Col md={4} className="footer-logo">
+              <img src={logo} alt="Logo" />
+            </Col>
+          <Col xs={12} md={4} className="footer-icons text-center">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+              <a href="https://www.linkedin.com/in/karenzinzius/"><img src={navIcon1} alt="Icon" /></a>
+              <a href='https://github.com/karenzinzius'><img src={navIcon2} alt="Icon" /></a>
+              <a href="Tel:+4915783513882"><img src={navIcon3} alt="Icon" /></a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+          </Col>
+          <Col xs={12} md={4} className="footer-text text-center text-md-end text-sm-end text-xs-end">
+            <p>© 2026 Karen M. Zinzius</p>
+            <p>All rights reserved</p>
           </Col>
         </Row>
       </Container>
