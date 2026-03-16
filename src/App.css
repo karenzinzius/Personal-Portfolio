@@ -365,7 +365,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-slider .item {
   transition: transform 0.3s ease;
 }
-
 .skill-slider .item:hover {
   transform: scale(1.1);
 }
@@ -379,7 +378,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .react-multi-carousel-dot-list {
   margin-top: 30px;
 }
-
 .react-multi-carousel-dot button {
   background: #777;
   border-radius: 50%;
@@ -394,18 +392,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: #000; /* dark background */
+  background-color: #000; 
   color: #fff;
   overflow: hidden;
 }
-
 .project h2 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
 }
-
 .project p {
   color: #B8B8B8;
   font-size: 18px;
@@ -415,7 +411,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   max-width: 600px;
 }
-
 /* Project row zig-zag layout */
 .project-row {
   display: grid;
@@ -424,21 +419,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   gap: 80px;
   margin-bottom: 100px;
 }
-
 .project-row.reverse {
   grid-template-areas: "text image";
 }
-
 .project-row:not(.reverse) {
   grid-template-areas: "image text";
 }
-
 .project-image {
   grid-area: image;
   border-radius: 20px;
   overflow: hidden;
 }
-
 .project-image img {
   width: 100%;
   height: auto;
@@ -446,24 +437,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   object-fit: cover;
   transition: transform 0.4s ease;
 }
-
 .project-image img:hover {
   transform: scale(1.05);
 }
-
 .proj-text {
   grid-area: text;
   text-align: left;
   max-width: 450px;
 }
-
 .proj-text h4 {
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2em;
   margin-bottom: 15px;
 }
-
 .proj-text p {
   font-size: 16px;
   line-height: 1.6;
@@ -677,32 +664,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
 }
 }
-/* .footer p {
-  font-weight: 400;
-  font-size: 14px;
-  color: #B8B8B8;
-  letter-spacing: 0.5px;
-  margin-top: 20px;
-}
-@media (max-width: 768px) {
-  .footer .social-icon {
-    display: flex;
-    gap: 2px;
-    justify-content: flex-end;
-  }
-}
-@media (max-width: 768px) {
-  .footer p {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-@media (max-width: 768px) {
-  .footer-logo-wrapper {
-   order: 1; /* row 2, left */
-    /* text-align: left;
-  }
-} */ */
 .footer .social-icon a img {
   width: 20px; 
   transition: all 0.3s ease;
@@ -719,6 +680,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer .social-icon a:nth-child(3):hover img {
   filter: brightness(0); 
 }
+/********** Phone Popup ************/
 .phone-popup {
   position: fixed;
   top: 0;
