@@ -21,7 +21,7 @@ https://portfolio-oze3.onrender.com
 
 ---
 
-## 📂 Project Structure
+### 📂 Project Structure
 
 ```plaintext
 my-react-portfolio/
@@ -46,11 +46,11 @@ my-react-portfolio/
 │   └── index.js
 ├── package.json
 └── README.md
-
+```
 
 ---
 
-##  Features
+###  Features
 
 1. **Dynamic and Interactive UI** – React components like Banner, Navbar, Projects, Skills, and Contact form.  
 2. **Responsive Design** – Works on desktop, tablet, and mobile using Bootstrap and custom CSS.  
@@ -58,12 +58,12 @@ my-react-portfolio/
 
 ---
 
-##  Getting Started
+###  Getting Started
 
 1. Clone the repository:  
 ```bash
 git clone https://github.com/your-username/my-react-portfolio.git
-
+```
 ---
 
 ### Author
