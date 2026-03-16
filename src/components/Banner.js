@@ -78,7 +78,7 @@ export const Banner = () => {
                     Strong focus on clean code, user experience, and visually
                     appealing interfaces.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  <button onClick={() => window.location.href="#connect"}>
                     Let's connect <ArrowRightCircle size={25} />
                   </button>
                 </div>
