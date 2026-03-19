@@ -4,20 +4,23 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { useTranslation } from "react-i18next";
 
 export const Banner = () => {
+  const { t } = useTranslation();
+
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const toRotate = [
-    "Full-Stack developer",
-    "Frontend Developer",
-    "Backend Developer",
-    "Software Developer",
-    "Web Developer",
-    "Web Designer",
-    "Application Developer",
+    t("banner.roles.fullStack"),
+    t("banner.roles.frontend"),
+    t("banner.roles.backend"),
+    t("banner.roles.software"),
+    t("banner.roles.webDev"),
+    t("banner.roles.webDesign"),
+    t("banner.roles.appDev"),
   ];
   const period = 2000;
 
@@ -39,9 +42,7 @@ export const Banner = () => {
 
     setText(updatedText);
 
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
+    if (isDeleting) setDelta((prevDelta) => prevDelta / 2);
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
@@ -65,21 +66,16 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <span className="tagline">{t("banner.welcome")}</span>
                   <h1>
-                    {`Hi! I'm Karen, `}
+                     {t("banner.hi")}
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    Creative and detail-oriented Full-Stack Web Developer with a
-                    background in Graphic and Motion Design. Practical
-                    experience in building responsive applications using
-                    TypeScript, React, Node.js, Express, and cloud deployment.
-                    Strong focus on clean code, user experience, and visually
-                    appealing interfaces.
+                    {t("banner.description")}
                   </p>
                   <button onClick={() => window.location.href="#connect"}>
-                    Let's connect <ArrowRightCircle size={25} />
+                    {t("banner.button")} <ArrowRightCircle size={25} />
                   </button>
                 </div>
               )}

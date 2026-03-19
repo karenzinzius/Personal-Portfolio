@@ -4,23 +4,20 @@ import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/navIcon1.svg";
 import navIcon2 from "../assets/img/navIcon2.svg";
 import navIcon3 from "../assets/img/navIcon3.svg";
+import { useTranslation } from "react-i18next";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
   const [showPhonePopup, setShowPhonePopup] = useState(false);
+  const { i18n, t } = useTranslation();
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", onScroll);
-
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -36,9 +33,11 @@ export const NavBar = () => {
             <img src={logo} alt="logo" />
           </div>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
+
+        <Navbar.Toggle aria-controls="basic-navbar-nav"> 
+          <span className="navbar-toggler-icon"></span> 
         </Navbar.Toggle>
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link
@@ -48,8 +47,9 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("home")}
             >
-              Home
+              {t("nav.home")}
             </Nav.Link>
+
             <Nav.Link
               href="#skills"
               className={
@@ -57,8 +57,9 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("skills")}
             >
-              Skills
+              {t("nav.skills")}
             </Nav.Link>
+
             <Nav.Link
               href="#projects"
               className={
@@ -66,9 +67,10 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("projects")}
             >
-              Projects
+              {t("nav.projects")}
             </Nav.Link>
           </Nav>
+
           <span className="navbar-text">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/karenzinzius/">
@@ -88,27 +90,45 @@ export const NavBar = () => {
                 <img src={navIcon3} alt="" />
               </a>
             </div>
+
             <a href="#connect">
               <button className="vvd">
-                <span>Let's Connect</span>
+                <span>{t("nav.connect")}</span>
               </button>
             </a>
+
+            {/* 🌍 LANGUAGE SWITCH */}
+            <div className="lang-switch">
+              <button
+                className={i18n.language === "de" ? "active" : ""}
+                onClick={() => i18n.changeLanguage("de")}
+              >
+                DE
+              </button>
+              <button
+                className={i18n.language === "en" ? "active" : ""}
+                onClick={() => i18n.changeLanguage("en")}
+              >
+                EN
+              </button>
+            </div>
           </span>
         </Navbar.Collapse>
       </Container>
+
       {showPhonePopup && (
         <div className="phone-popup">
           <div className="phone-popup-box">
-            <p>Call +49 157 83513882?</p>
+            <p>{t("nav.callPrompt")}</p>
             <div className="popup-buttons">
               <a href="tel:+4915783513882" className="call-btn">
-                Call
+                {t("nav.call")}
               </a>
               <button
                 className="cancel-btn"
                 onClick={() => setShowPhonePopup(false)}
               >
-                Cancel
+                {t("nav.cancel")}
               </button>
             </div>
           </div>

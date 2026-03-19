@@ -252,6 +252,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+.lang-switch {
+  display: flex;
+  margin-left: 15px;
+}
+.lang-switch button {
+  background: transparent;
+  border: 1px solid #aaa;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.lang-switch button:hover {
+  border-color:#fff;
+  color: #000;
+  transform: scale(1.05);
+}
+.lang-switch button.active {
+  background: #fff;
+  border: 20px;
+  color: #000;
+}
 /************ Banner Css ************/
 .banner {
   margin-top: 0;

@@ -11,7 +11,7 @@ export const ProjectCard = ({ imgUrl, title, description, github, live, index })
           <h4>{title}</h4>
           <p>{description}</p>
           <a href={github} target="_blank">GitHub</a>
-          <a href={live} target="_blank">Live</a>
+          <a href={live} target="_blank">DemoLive</a>
         </div>
 
       </div>

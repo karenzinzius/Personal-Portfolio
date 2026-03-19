@@ -4,16 +4,18 @@ import contactImg from "../assets/img/contact-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+  const { t } = useTranslation();
   const form = useRef();
-  const [buttonText, setButtonText] = useState("Send");
+  const [buttonText, setButtonText] = useState(t("contact.send"));
   const [status, setStatus] = useState({});
   const [sending, setSending] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setButtonText("Sending...");
+    setButtonText(t("contact.sending"));
     setSending(true);
 
     emailjs
@@ -24,27 +26,22 @@ export const Contact = () => {
         process.env.REACT_APP_PUBLIC_KEY
       )
       .then(() => {
-        setStatus({ success: true, message: "Sent!" });
-        setButtonText("Sent!");
-
+        setStatus({ success: true, message: t("contact.sent") });
+        setButtonText(t("contact.sent"));
         form.current.reset();
-
         setTimeout(() => {
           setStatus({});
-          setButtonText("Send");
+          setButtonText(t("contact.send"));
         }, 2000);
-
-        setSending(false)
+        setSending(false);
       })
       .catch(() => {
-        setStatus({ success: false, message: "Not sent!" });
-        setButtonText("Not sent!");
-
+        setStatus({ success: false, message: t("contact.notSent") });
+        setButtonText(t("contact.notSent"));
         setTimeout(() => {
           setStatus({});
-          setButtonText("Send");
+          setButtonText(t("contact.send"));
         }, 2000);
-
         setSending(false);
       });
   };
@@ -69,39 +66,30 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <h2>Get In Touch</h2>
-
+                  <h2>{t("contact.title")}</h2>
                   <form ref={form} onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
-                        <input type="text" name="firstName" placeholder="First Name" required />
+                        <input type="text" name="firstName" placeholder={t("contact.firstName")} required />
                       </Col>
-
                       <Col size={12} sm={6} className="px-1">
-                        <input type="text" name="lastName" placeholder="Last Name" required />
+                        <input type="text" name="lastName" placeholder={t("contact.lastName")} required />
                       </Col>
-
                       <Col size={12} sm={6} className="px-1">
-                        <input type="email" name="email" placeholder="Email Address" required />
+                        <input type="email" name="email" placeholder={t("contact.email")} required />
                       </Col>
-
                       <Col size={12} sm={6} className="px-1">
-                        <input type="tel" name="phone" placeholder="Phone No." />
+                        <input type="tel" name="phone" placeholder={t("contact.phone")} />
                       </Col>
-
                       <Col size={12} className="px-1">
-                        <textarea rows="6" name="message" placeholder="Message" required></textarea>
-
+                        <textarea rows="6" name="message" placeholder={t("contact.message")} required></textarea>
                         <button type="submit" disabled={sending}>
                           <span>{buttonText}</span>
                         </button>
                       </Col>
-
                       {status.message && (
                         <Col>
-                          <p className={status.success ? "success" : "danger"}>
-                            {status.message}
-                          </p>
+                          <p className={status.success ? "success" : "danger"}>{status.message}</p>
                         </Col>
                       )}
                     </Row>

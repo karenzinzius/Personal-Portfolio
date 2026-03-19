@@ -1,0 +1,81 @@
+{
+   "nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "connect": "Let's Connect",
+    "callPrompt": "Call +49 157 83513882?",
+    "call": "Call",
+    "cancel": "Cancel"
+  },
+  "banner": {
+    "welcome": "Welcome to my Portfolio",
+    "hi": "Hi! I'm Karen,",
+    "description": "Creative and detail-oriented Full-Stack Web Developer with experience in graphic and motion design. Hands-on experience building responsive applications using React, Node.js, Express, and cloud deployment. Strong focus on clean code, user experience, and engaging interfaces.",
+    "button": "Let's connect",
+    "roles": {
+      "fullStack": "Full-Stack Developer",
+      "frontend": "Frontend Developer",
+      "backend": "Backend Developer",
+      "software": "Software Developer",
+      "webDev": "Web Developer",
+      "webDesign": "Web Designer",
+      "appDev": "Application Developer"
+    }
+  },
+  "skills": {
+  "title": "Skills",
+  "description" : "Solid foundation in data structures, algorithms, and object-oriented programming, combined with strong problem-solving, analytical thinking, collaboration, and continuous learning skills.",
+  "items": {
+    "js": "JavaScript",
+    "python": "Python",
+    "react": "React | Vite",
+    "db": "Databases",
+    "frontend": "HTML | CSS | Tailwind",
+    "backend": "Express | APIs"
+  }
+},
+  "projects": {
+  "title": "Projects",
+  "description": "The following projects showcase my practical experience developing modern web applications, from responsive user interfaces to scalable backend systems.",
+
+  "travel": {
+    "title": "Travel Agency Demo",
+    "desc": "Frontend travel website built with JavaScript."
+  },
+  "event": {
+    "title": "Event Scheduler Demo",
+    "desc": "Web app with API integration built using TypeScript. Allows users to create, manage, and organize events in a simple and user-friendly interface."
+  },
+  "journal": {
+    "title": "Travel Journal Demo",
+    "desc": "Frontend single-page application with authentication and backend API for handling business logic and data."
+  },
+  "coffee": {
+    "title": "Coffee Shop Demo",
+    "desc": "Semantic website built with HTML and CSS."
+  },
+  "diary": {
+    "title": "Personal Diary Demo",
+    "desc": "Single Page Application built with React and Vite. Users can create, view, and manage diary entries in a clean interface."
+  }
+},
+  "contact": {
+    "title": "Get In Touch",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "sent": "Sent!",
+    "notSent": "Failed to send"
+  },
+  "footer": {
+  "rights": "All rights reserved",
+  "callPrompt": "Call +49 157 83513882?",
+  "call": "Call",
+  "cancel": "Cancel"
+}
+}

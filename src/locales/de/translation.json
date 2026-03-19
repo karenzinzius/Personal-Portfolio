@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "connect": "Kontakt",
+    "callPrompt": "Möchten Sie +49 157 83513882 anrufen?",
+    "call": "Anrufen",
+    "cancel": "Abbrechen"
+  },
+  "banner": {
+    "welcome": "Willkommen in meinem Portfolio",
+    "hi": "Hallo! Ich bin Karen,",
+    "description": "Kreative und detailorientierte Full-Stack-Webentwicklerin mit Erfahrung in Grafik- und Motion-Design. Praktische Erfahrung im Aufbau responsiver Anwendungen mit React, Node.js, Express und Cloud-Deployment. Starker Fokus auf sauberen Code, Benutzererfahrung und ansprechende Oberflächen.",
+    "button": "Lass uns verbinden",
+    "roles": {
+      "fullStack": "Full-Stack-Entwicklerin",
+      "frontend": "Frontend-Entwicklerin",
+      "backend": "Backend-Entwicklerin",
+      "software": "Softwareentwicklerin",
+      "webDev": "Webentwicklerin",
+      "webDesign": "Webdesignerin",
+      "appDev": "Anwendungsentwicklerin"
+    }
+  },
+  "skills": {
+  "title": "Fähigkeiten",
+  "description": "Solide Grundlage in Datenstrukturen, Algorithmen und objektorientierter Programmierung, kombiniert mit ausgeprägten Fähigkeiten im Problemlösen, analytischen Denken, Teamarbeit und kontinuierlichem Lernen.",
+  "items": {
+    "js": "JavaScript",
+    "python": "Python",
+    "react": "React | Vite",
+    "db": "Datenbanken",
+    "frontend": "HTML | CSS | Tailwind",
+    "backend": "APIs | Express"
+    }
+  },
+  "projects": {
+  "title": "Projekte",
+  "description": "Die folgenden Projekte zeigen meine praktische Erfahrung in der Entwicklung moderner Webanwendungen – von responsiven Benutzeroberflächen bis hin zu skalierbaren Backend-Systemen.",
+
+  "travel": {
+    "title": "Reisebüro Demo",
+    "desc": "Frontend-Reisewebsite mit JavaScript erstellt."
+  },
+  "event": {
+    "title": "Eventplaner Demo",
+    "desc": "Webanwendung mit API-Integration in TypeScript. Ermöglicht das Erstellen, Verwalten und Organisieren von Events."
+  },
+  "journal": {
+    "title": "Reisetagebuch Demo",
+    "desc": "Frontend-SPA mit Authentifizierung und Backend-API für Logik und Datenverarbeitung."
+  },
+  "coffee": {
+    "title": "Café Demo",
+    "desc": "Semantische Website mit HTML und CSS erstellt."
+  },
+  "diary": {
+    "title": "Tagebuch App Demo",
+    "desc": "Single Page Application mit React und Vite zum Schreiben und Verwalten persönlicher Einträge."
+  }
+},
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefonnummer",
+    "message": "Nachricht",
+    "send": "Senden",
+    "sending": "Senden...",
+    "sent": "Gesendet!",
+    "notSent": "Fehler beim Senden!"
+  },
+  "footer": {
+  "rights": "Alle Rechte vorbehalten",
+  "callPrompt": "Möchten Sie +49 157 83513882 anrufen?",
+  "call": "Anrufen",
+  "cancel": "Abbrechen"
+}
+}

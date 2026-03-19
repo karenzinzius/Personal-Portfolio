@@ -12,43 +12,42 @@ import projImg5 from "../assets/img/project-img5.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
+  const { t } = useTranslation();
+
   const projects = [
     {
-      title: "Travel Agency",
-      description: "Frontend travel website built with JavaScript.",
+      title: t("projects.travel.title"),
+      description: t("projects.travel.desc"),
       github: "https://github.com/karenzinzius/Travel-Agency",
       live: "https://travel-agency-1xtc.onrender.com",
       imgUrl: projImg5,
     },
     {
-      title: "Event Scheduler",
-      description:
-        "Web app with API integration built using TypeScript. Allows users to create, manage, and organize events in a simple and user-friendly interface.",
+      title: t("projects.event.title"),
+      description: t("projects.event.desc"),
       github: "https://github.com/karenzinzius/event-scheduler",
       live: "https://eventscheduler-81mw.onrender.com",
       imgUrl: projImg4,
     },
     {
-      title: "Travel Journal",
-      description:
-        "Frontend single-page application with Authentication and authorization service and Backend API for business logic and data handling.",
+      title: t("projects.journal.title"),
+      description: t("projects.journal.desc"),
       github: "https://github.com/karenzinzius/travelJournal",
-      // live: "LIVE_LINK",
       imgUrl: projImg3,
     },
-     {
-      title: "Coffee Shop",
-      description: "Semantic website built with HTML and CSS.",
+    {
+      title: t("projects.coffee.title"),
+      description: t("projects.coffee.desc"),
       github: "https://github.com/karenzinzius/coffee-shop",
       live: "https://karenzinzius.github.io/coffee-shop/",
       imgUrl: projImg1,
     },
     {
-      title: "Personal Diary",
-      description:
-        "Single Page Application (SPA) built with React and Vite.The application allows users to write, view, and manage personal diary entries in a simple and clean interface.",
+      title: t("projects.diary.title"),
+      description: t("projects.diary.desc"),
       github: "https://github.com/karenzinzius/My-Personal-Diary",
       live: "https://daily-thoughts-61xk.onrender.com",
       imgUrl: projImg2,
@@ -62,18 +61,13 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__bounce" : ""}>
-                  <h2>Projects</h2>
-                  <p>
-                    The following projects showcase my practical experience
-                    developing modern web applications, from responsive user
-                    interfaces to scalable backend systems.
-                  </p>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} index={index} />;
-                          })}
+                <div className={isVisible ? "animate__animated animate__bounce" : ""}>
+                  <h2>{t("projects.title")}</h2>
+                  <p>{t("projects.description")}</p>
+
+                  {projects.map((project, index) => (
+                    <ProjectCard key={index} {...project} index={index} />
+                  ))}
                 </div>
               )}
             </TrackVisibility>
